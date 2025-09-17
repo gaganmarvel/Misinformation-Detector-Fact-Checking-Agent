@@ -10,16 +10,16 @@ This project aims to build a GenAI-powered misinformation detection system that 
 - Classifies claims as True, False, Misleading, etc.
 - Provides evidence-based explanations via retrieval-augmented verification.
 - Offers an API endpoint for real-time fact-checking of text inputs.
-Research Question:
+<br>Research Question:
 - How can AI detect misinformation reliably and provide evidence-based explanations in real time?
 
 ## Datasets
-1. FACTors 
+1. FACTors [Dataset](https://github.com/altuncu/FACTors)
 - ~118,000 fact-checked claims from 1995–2025
 - Attributes: Claim, Report ID, Date, Author, Organisation, Verdict, Normalised rating
 - Use: Supervised classification, temporal generalisation, fairness analysis
 
-2. FEVER
+2. FEVER [Dataset](https://fever.ai/dataset/fever.html)
 - ~185,000 claims derived from Wikipedia
 - Attributes: Claim text, Label (Supports/Refutes/Not Enough Info), Evidence sentences
 - Use: Retrieval-augmented verification and explanation generation
