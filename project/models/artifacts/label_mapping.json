@@ -1,0 +1,16 @@
+{
+  "label2id": {
+    "False": 0,
+    "Other": 1,
+    "Partially True": 2,
+    "True": 3,
+    "Unverifiable": 4
+  },
+  "id2label": {
+    "0": "False",
+    "1": "Other",
+    "2": "Partially True",
+    "3": "True",
+    "4": "Unverifiable"
+  }
+}
