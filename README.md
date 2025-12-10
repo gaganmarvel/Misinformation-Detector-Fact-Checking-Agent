@@ -1,9 +1,9 @@
 # Misinformation-Detector-Fact-Checking-Agent
 
 Team E:
-- Gagan Venkatesh
-- Manoj Kumar Pasupuleti
-- Swarali Tannu
+- [Gagan Venkatesh](https://github.com/gaganmarvel "Gagan Venkatesh")
+- [Manoj Kumar Pasupuleti](https://github.com/ManojUMBC "Manoj Kumar Pasupuleti")
+- [Swarali Tannu](https://github.com/swaralitannu "Swarali Tannu")
 
 ## Project Overview
 This project aims to build a GenAI-powered misinformation detection system that goes beyond simple classification. The system:
