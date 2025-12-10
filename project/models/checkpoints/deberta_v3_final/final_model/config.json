@@ -1,0 +1,7 @@
+{
+  "model_type": "deberta-v3",
+  "hidden_size": 768,
+  "num_labels": 5,
+  "year_emb_dim": 32,
+  "num_year_ids": 29
+}
