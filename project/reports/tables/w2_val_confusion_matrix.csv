@@ -1,0 +1,6 @@
+,pred_False,pred_Other,pred_Partially True,pred_True,pred_Unverifiable
+true_False,8727,66,2287,656,32
+true_Other,54,46,17,4,0
+true_Partially True,1370,9,1358,142,8
+true_True,237,6,131,401,1
+true_Unverifiable,69,0,20,14,5

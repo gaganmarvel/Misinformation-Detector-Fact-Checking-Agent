@@ -1,0 +1,7 @@
+,0
+recall@1,1.0
+recall@3,1.0
+recall@5,1.0
+mrr,1.0
+eligible_queries,256.0
+similarity_threshold,0.88
