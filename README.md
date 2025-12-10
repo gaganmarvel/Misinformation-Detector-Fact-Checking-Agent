@@ -67,27 +67,28 @@ This prevents leakage and evaluates true robustness under distribution shift.
 - ECE (Expected Calibration Error): 0.0173
 
 ## Retrieval-Augmented Verification
-- Embedding Model - SBERT: all-MiniLM-L6-v2
-- Retrieval Pipeline
--- Encodes all train claims
--- Builds FAISS IndexFlatIP for cosine similarity
--- Retrieves top-k (k=5) past fact-checks for each test claim
-- Evaluation
--- Recall@k and MRR
--- Semantic duplicate evaluation using cosine ≥ 0.88 <br>
+#### Embedding Model 
+- SBERT: all-MiniLM-L6-v2
+#### Retrieval Pipeline
+- Encodes all train claims
+- Builds FAISS IndexFlatIP for cosine similarity
+- Retrieves top-k (k=5) past fact-checks for each test claim
+#### Evaluation
+- Recall@k and MRR
+- Semantic duplicate evaluation using cosine ≥ 0.88 <br>
 Retrieval allows the system to cite historical fact-checks highly relevant to the input claim.
 
 ## GEN AI Explanations
-### Without Web Evidence
+#### Without Web Evidence
 - FLAN-T5 generates fact-check explanations using retrieved FACTors claims only
 - Ensures low hallucination risk
 - Useful for controlled evaluations
-### With Web Evidence
+#### With Web Evidence
 - Wikipedia API → fallback to DuckDuckGo
 - GPT-4o-mini produces explanations citing:
--- [F1], [F2], … for FACTors
--- [W1], [W2], … for web evidence
-### Attribution (NLI Grounding)
+<br> [F1], [F2], … for FACTors
+<br>[W1], [W2], … for web evidence
+#### Attribution (NLI Grounding)
 - RoBERTa-MNLI validates each generated sentence
 - Produces an Attribution Support Rate
 - Ensures explanations are grounded and trustworthy
@@ -99,14 +100,14 @@ For each year in test set:
 - Highlights need for continual fine-tuning or domain adaptation
 
 ## API Deployment (FastAPI)
-### Endpoints
+#### Endpoints
 POST /analyze
-### Input:
+#### Input:
 {
   "claim": "Vaccines cause autism",
   "year": 2024
 }
-### Output includes:
+#### Output includes:
 - Predicted label
 - Class probabilities
 - Retrieved FACTors evidence
